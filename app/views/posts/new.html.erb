@@ -1,0 +1,9 @@
+<%= form_for @post do |f| %>
+  Title: <%= f.text_field :title %><br>
+  Content: <%= f.text_area :content %><br>
+  <%= f.label :share %>
+  <%= f.check_box :share %>
+
+  <%= f.submit 'Gönder', class:'button'%>
+<% end %>
+<%= @post.errors.full_messages.join('.')%>
