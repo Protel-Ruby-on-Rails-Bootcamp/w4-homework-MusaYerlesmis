@@ -5,8 +5,7 @@
     <%else%>
         <%= link_to 'Giriş Yap',new_user_session_path %>
     <%end%>
-<p><%= link_to 'post ekle ✍️', new_post_path %></p>
-<p><%= link_to 'postları listele', posts_path %></p>
+
 <ul>
   <% @posts.each do |post| %>
     <% if user_signed_in? %>

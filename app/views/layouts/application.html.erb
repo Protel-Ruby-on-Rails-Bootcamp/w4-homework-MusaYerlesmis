@@ -10,7 +10,11 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
+
     <%= yield %>
+      <%=link_to "dashboard",dashboard_path%>
+
   </body>
 </html>
